@@ -1,0 +1,35 @@
+[{
+	"name": "Damith C. Rajapakse",
+	"pic": "damith.png",
+	"pos": [
+		"Founder (2010)",
+		"Project Mentor (2010 -)"
+	]
+}, {
+	"name": "Low WeiLin",
+	"pic": "weilin.png",
+	"pos": [
+		"Project Lead (Aug 2015 - )",
+		"Area Lead - Sessions (Aug 2014 - Jul 2015)",
+		"Snr Developer (June 2014 - Jul 2014)",
+		"Committer (Jan 2014 - Jul 2014)"
+	]
+}, {
+	"name": "Kang Hong Jin",
+	"pic": "hongjin.png",
+	"pos": [
+		"Project Lead (Aug 2015 - )",
+		"Snr Developer (May 2015 - Jul 2015)",
+		"Committer (Aug 2014 - Apr 2015)"
+	]	
+}, {
+	"name": "Thyagesh M.",
+	"pic": "thyagesh.png",
+	"pos": [
+		"Project Lead (Jan 2016 - )",
+		"Area Lead - Profiles (Aug 2014 - Dec 2015)",
+		"Snr Developer (June 2014 - Jul 2014)",
+		"Committer (Apr 2014 - May 2014)"
+	]
+}
+]
