@@ -54,6 +54,18 @@ function handleData(err, data) {
     .text(function(d) {
       return d;
     });
+
+  d3.select('#change-font-init')
+    .on('click', function() {
+      d3.selectAll('h4')
+        .style('font-size', 'initial');
+    });
+
+  d3.select('#change-font-big')
+    .on('click', function() {
+      d3.selectAll('h4')
+        .style('font-size', '1.5rem');
+    });
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {
