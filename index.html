@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Dynamically loaded cards using d3.js</title>
   <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
-<!--  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <!--  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
   <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script> -->
   <script type="text/javascript" src="js/vendor/d3.min.js"></script>
   <script type="text/javascript" src="js/app.js"></script>
@@ -12,26 +13,36 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<h2 class="site-title">Dynamically loaded cards using d3.js</h2>
-<div class="container-fluid title">
-  <h5 class="title-text">Bootstrap 4</h5>
-  <p class="subtitle-text">Built-in dynamically calculated equal height and width (bugged at this time)</p>
-</div>
-<div class="container-fluid section">
-  <div class="main-container-bootstrap"></div>
-  <div style="text-align: center;">
-  <button id="change-font-init" style="margin: 0 auto;">change font size initial</button>
-  <button id="change-font-big" style="margin: 0 auto;">change font size big</button>
-</div>
-</div>
-<div class="container-fluid title">
-  <h5 class="title-text">Material Design Lite</h5>
-  <p class="subtitle-text">Dynamically calculated equal height and width via css tricks</p>
-</div>
-<div class="container-fluid section">
-  <div class="main-container-material"></div>
-</div>
-</div>
+  <h2 class="site-title">Dynamically loaded cards using d3.js</h2>
+  <div class="container-fluid title">
+    <h5 class="title-text">Bootstrap 4</h5>
+    <p class="subtitle-text">Built-in dynamically calculated equal height and width (bugged at this time)</p>
+  </div>
+  <div class="container-fluid section">
+    <div class="main-container-bootstrap"></div>
+    <div style="">
+      <div style="margin: 5px auto; width: 25%; background-color: silver; text-align: center;">
+        <p>unequal width currently fixed with</p>
+        <pre style="text-align: left;">
+.card-deck .card {
+  width: initial;
+}
+                </pre>
+        <button id="change-font-init" style="margin: 0 auto;">change font size initial</button>
+        <button id="change-font-big" style="margin: 0 auto;">change font size big</button>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid title">
+    <h5 class="title-text">Material Design Lite</h5>
+    <p class="subtitle-text">Dynamically calculated equal height and width via css tricks</p>
+  </div>
+  <div class="container-fluid section">
+    <div class="main-container-material"></div>
+  </div>
+  </div>
 </body>
+
 </html>
