@@ -1,1 +1,31 @@
-	
+.material-wrapper {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 1.25rem 0;
+  margin-bottom: 10px; }
+
+.mdl-card {
+  width: initial;
+  display: table-cell; }
+
+.card-deck .card {
+  width: initial; }
+
+.site-title {
+  text-align: center; }
+
+.section {
+  background-color: #e6e6e6; }
+
+.title {
+  background-color: #1a1a1a;
+  text-align: center; }
+  .title .title-text {
+    margin: 0;
+    padding: 20px;
+    color: #e6e6e6; }
+  .title .subtitle-text {
+    margin: 0;
+    color: gray; }
+
+/*# sourceMappingURL=styles.css.map */

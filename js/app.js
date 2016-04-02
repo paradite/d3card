@@ -1,9 +1,57 @@
-function handleData(err, data) {
-  if (err) {
-    console.log(err);
-    return;
-  }
-  var container = d3.select('.main-container')
+function displayMaterial(data) {
+  var container = d3.select('.main-container-material')
+    .style('margin', '0 auto')
+    .style('width', '70%')
+    .append('div')
+    .classed('material-wrapper', true);
+
+  var cards = container
+    .selectAll('div.mdl-card')
+    .data(data)
+    .enter()
+    .append('div')
+    .classed('mdl-card mdl-shadow--4dp', true);
+
+  // image
+  cards.append('div')
+    .classed('mdl-card__media', true)
+    .append('img')
+    .attr('data-src', function(d) {
+      return d.pic;
+    })
+    .attr('src', function(d) {
+      return d.pic;
+    })
+    .attr('alt', function(d) {
+      return d.name;
+    })
+    .style('width', '100%');
+
+  // name
+  cards.append('div')
+    .classed('mdl-card__title', true)
+    .append('h2')
+    .classed('mdl-card__title-text', true)
+    .text(function(d) {
+      return d.name;
+    });
+
+  // positions
+  cards.selectAll('div.pos')
+    .data(function(d) {
+      return d.pos;
+    })
+    .enter()
+    .append('div')
+    .classed('mdl-card__supporting-text', true)
+    .style('padding', '10px 16px')
+    .text(function(d) {
+      return d;
+    });
+}
+
+function displayBootstrap(data) {
+  var container = d3.select('.main-container-bootstrap')
     .append('div')
     .classed('card-deck-wrapper', true)
     .style('width', '70%')
@@ -44,7 +92,7 @@ function handleData(err, data) {
     });
 
   // positions
-  var positions = blocks.selectAll('p.pos')
+  blocks.selectAll('p.pos')
     .data(function(d) {
       return d.pos;
     })
@@ -66,6 +114,15 @@ function handleData(err, data) {
       d3.selectAll('h4')
         .style('font-size', '1.5rem');
     });
+}
+
+function handleData(err, data) {
+  if (err) {
+    console.log(err);
+    return;
+  }
+  displayBootstrap(data);
+  displayMaterial(data);
 }
 
 document.addEventListener('DOMContentLoaded', function(event) {

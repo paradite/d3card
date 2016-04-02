@@ -1,0 +1,43 @@
+$dark: lighten(black, 10%);
+
+$dark-light: lighten(black, 50%);
+
+$light: lighten($dark, 80%);
+
+.material-wrapper {
+  display: table;
+  table-layout: fixed;
+  border-spacing: 1.25rem 0;
+  margin-bottom: 10px;
+}
+
+.mdl-card {
+  width: initial;
+  display: table-cell;
+}
+
+.card-deck .card {
+  width: initial;
+}
+
+.site-title {
+  text-align: center;
+}
+
+.section {
+  background-color: $light;
+}
+
+.title {
+  background-color: $dark;
+  text-align: center;
+  .title-text {
+    margin: 0;
+    padding: 20px;
+    color: $light;
+  }
+  .subtitle-text {
+    margin: 0;
+    color: $dark-light;
+  }
+}

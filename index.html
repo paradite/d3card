@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Dynamically loaded Bootstrap 4 Card using d3.js</title>
-	<link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
-<!-- 	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
-	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script> -->
-	<script type="text/javascript" src="js/vendor/d3.min.js"></script>
-	<script type="text/javascript" src="js/app.js"></script>
+  <title>Dynamically loaded cards using d3.js</title>
+  <link rel="stylesheet" type="text/css" href="css/vendor/bootstrap.min.css">
+<!--  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script> -->
+  <script type="text/javascript" src="js/vendor/d3.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+  <link rel="stylesheet" href="css/vendor/material.min.css">
+  <script src="js/vendor/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<h1 >Dynamically loaded Bootstrap 4 Card using d3.js</h1>
-<div class="main-container"></div>
-<div style="text-align: center;">
-	<button id="change-font-init" style="margin: 0 auto;">change font size initial</button>
-	<button id="change-font-big" style="margin: 0 auto;">change font size big</button>
+<h2 class="site-title">Dynamically loaded cards using d3.js</h2>
+<div class="container-fluid title">
+  <h5 class="title-text">Bootstrap 4</h5>
+  <p class="subtitle-text">Built-in dynamically calculated equal height and width (bugged at this time)</p>
+</div>
+<div class="container-fluid section">
+  <div class="main-container-bootstrap"></div>
+  <div style="text-align: center;">
+  <button id="change-font-init" style="margin: 0 auto;">change font size initial</button>
+  <button id="change-font-big" style="margin: 0 auto;">change font size big</button>
+</div>
+</div>
+<div class="container-fluid title">
+  <h5 class="title-text">Material Design Lite</h5>
+  <p class="subtitle-text">Dynamically calculated equal height and width via css tricks</p>
+</div>
+<div class="container-fluid section">
+  <div class="main-container-material"></div>
+</div>
 </div>
 </body>
 </html>
